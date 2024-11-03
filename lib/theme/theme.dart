@@ -76,9 +76,12 @@ class AppTheme {
     ),
 
     elevatedButtonTheme: ElevatedButtonThemeData(
-      style: ButtonStyle(
-        backgroundColor: WidgetStateProperty.all(AppColors.blue),
-        textStyle: WidgetStateProperty.all(AppTextStyles.button),
+      style: ElevatedButton.styleFrom(
+        backgroundColor: AppColors.blue,
+        textStyle: AppTextStyles.button,
+        shape: RoundedRectangleBorder(
+          borderRadius: BorderRadius.circular(30),
+        ),
       ),
     ),
   );
