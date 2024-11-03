@@ -13,6 +13,20 @@ class Registration extends StatefulWidget {
 class _RegistrationState extends State<Registration> {
   String? selectedValue;
 
+//   void registerUser() async {
+//   try {
+//     final user = await UsersApiService().registerUser(registerUserDTO);
+//     if (user != null) {
+//       // Navigate to the next screen or show success message
+//     } else {
+//       // Handle unsuccessful registration (e.g., show an error message)
+//     }
+//   } catch (e) {
+//     // Handle any exceptions thrown by the API call (e.g., network errors)
+//     print('An error occurred during registration: $e');
+//   }
+// }
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
